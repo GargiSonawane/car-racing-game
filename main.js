@@ -73,3 +73,83 @@ function my_keydown(e){
         console.log("key s");
     }
 }
+function car1_up(){
+    if(car1_y >= 0){
+        car1_y = car1_y - 10;
+        console.log("up arrow pressed. Car 1 x= " + car1_x + " y= " + car1_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}
+function car1_down(){
+    if(car1_y >= 500){
+        car1_y = car1_y + 10;
+        console.log("up arrow pressed. Car 1 x= " + car1_x + " y= " + car1_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}
+function car1_left(){
+    if(car1_x >= 0){
+        car1_x = car1_x - 10;
+        console.log("up arrow pressed. Car 1 x= " + car1_x + " y= " + car1_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}
+function car1_right(){
+    if(car1_x >= 500){
+        car1_x = car1_x + 10;
+        console.log("up arrow pressed. Car 1 x= " + car1_x + " y= " + car1_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }    
+} 
+function car2_up(){
+    if(car2_y >= 0){
+        car2_y = car2_y - 10;
+        console.log("up arrow pressed. Car 2 x= " + car2_x + " y= " + car2_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}   
+function car2_down(){
+    if(car2_y >= 500){
+        car2_y = car2_y + 10;
+        console.log("up arrow pressed. Car 2 x= " + car2_x + " y= " + car2_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}
+function car2_left(){
+    if(car2_x >= 0){
+        car2_x = car2_x - 10;
+        console.log("up arrow pressed. Car 2 x= " + car2_x + " y= " + car2_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }
+}
+function car2_right(){
+    if(car2_x >= 500){
+        car2_x = car2_x + 10;
+        console.log("up arrow pressed. Car 2 x= " + car2_x + " y= " + car2_y);
+        uploadBackground();
+        uploadCar1();
+        uploadCar2();
+    }    
+} 
+if(car1_x > 700){
+    console.log("car 1 won!");
+    document.getElementById('game_status').innerHTML=" Car 1 won!!"
+}
+if(car2_x > 700){
+    console.log("car 2 won!");
+    document.getElementById('game_status').innerHTML=" Car 2 won!!"
+}
